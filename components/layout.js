@@ -3,17 +3,22 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const name = "Shubham Prajapat";
 export const siteTitle = "Shubham Prajapat - Web & App Developer";
 export const siteDescription = "✔ A Full Stack Web Developer Specialized in JavaScript. Having More Than 2 Years of Experience in Building Powerful and Unique Web Apps.";
 export default function Layout({ children, home }) {
+	const [width, setWidth] = useState(0);
+	useEffect(() => {
+		setWidth(window.innerWidth);
+	}, []);
 	return (
 		<div className={styles.container}>
 			<Head>
 				<meta charSet="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
-				<meta name="theme-color" content="#ffff00" />
+				<meta name="theme-color" content="#04619f" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>{siteTitle}</title>
 				<meta name="description" content={siteDescription} />
@@ -49,7 +54,7 @@ export default function Layout({ children, home }) {
 				{home ? (
 					<>
 						<Image priority src="/images/profile.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={name} />
-						<h1 className={utilStyles.heading2Xl}>{name}</h1>
+						{width <= 480 ? null : <h1 className={utilStyles.heading2Xl}>{name}</h1>}
 					</>
 				) : (
 					<>
