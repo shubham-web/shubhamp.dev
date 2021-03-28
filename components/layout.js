@@ -24,11 +24,11 @@ export default function Layout({ children, home }) {
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content={siteTitle} />
 				<meta property="og:description" content={siteDescription} />
-				<meta property="og:image" content="https://shubhamprajapat.com/assets/images/card.jpg" />
+				<meta property="og:image" content="https://shubhamprajapat.com/images/card.jpg" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content={siteTitle} />
 				<meta name="twitter:description" content={siteDescription} />
-				<meta name="twitter:image" content="https://shubhamprajapat.com/assets/images/card.jpg" />
+				<meta name="twitter:image" content="https://shubhamprajapat.com/images/card.jpg" />
 				<meta name="keywords" content="JavaScript Developer, Web developers in India, App Developer in central india, Web developer in dewas madhya pradesh, Web Developement Freelancer" />
 				<meta name="author" content="Shubham Prajapat" />
 				{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
