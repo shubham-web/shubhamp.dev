@@ -8,15 +8,15 @@ export default function Home() {
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
-			<section className={utilStyles.headingMd}>
-				<p>Hello, I'm Shubham. A Javascript Developer Having Two and a half year of Experience in Building Powerful Web Apps 🔥.</p>
+			<section>
+				<p className={utilStyles.headingMd}>Hello, I'm Shubham. A Javascript Developer Having Two and a half year of Experience in Building Powerful Web Apps 🔥.</p>
 				<div>
 					<h2 className={utilStyles.headingMd}>Area of Expertise</h2>
-					<ul>
-						<li>ReactJS</li>
-						<li>NodeJS</li>
-						<li>AWS Services</li>
-						<li>PHP</li>
+					<ul className={utilStyles.list}>
+						<li className={utilStyles.listItem}>ReactJS</li>
+						<li className={utilStyles.listItem}>NodeJS</li>
+						<li className={utilStyles.listItem}>AWS Services</li>
+						<li className={utilStyles.listItem}>PHP</li>
 					</ul>
 				</div>
 			</section>

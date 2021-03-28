@@ -13,13 +13,13 @@ export default function Layout({ children, home }) {
 			<Head>
 				<meta charSet="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
-				<meta name="theme-color" content="#292929" />
+				<meta name="theme-color" content="#ffff00" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>{siteTitle}</title>
 				<meta name="description" content={siteDescription} />
-				<meta itemprop="name" content={siteTitle} />
-				<meta itemprop="description" content={siteDescription} />
-				<meta itemprop="image" content="https://shubhamprajapat.com/images/card.jpg" />
+				<meta itemProp="name" content={siteTitle} />
+				<meta itemProp="description" content={siteDescription} />
+				<meta itemProp="image" content="https://shubhamprajapat.com/images/card.jpg" />
 				<meta property="og:url" content="https://shubhamprajapat.com" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content={siteTitle} />
