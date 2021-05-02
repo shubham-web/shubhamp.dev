@@ -3,16 +3,10 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-
 const name = "Shubham Prajapat";
-export const siteTitle = "Shubham Prajapat - Web & App Developer";
+export const siteTitle = "Shubham Prajapat - Full Stack Web Developer";
 export const siteDescription = "✔ A Full Stack Web Developer Specialized in JavaScript. Having More Than 2 Years of Experience in Building Powerful and Unique Web Apps.";
 export default function Layout({ children, home }) {
-	const [width, setWidth] = useState(0);
-	useEffect(() => {
-		setWidth(window.innerWidth);
-	}, []);
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -34,7 +28,7 @@ export default function Layout({ children, home }) {
 				<meta name="twitter:title" content={siteTitle} />
 				<meta name="twitter:description" content={siteDescription} />
 				<meta name="twitter:image" content="https://shubhamprajapat.com/images/card.jpg" />
-				<meta name="keywords" content="JavaScript Developer, Web developers in India, App Developer in central india, Web developer in dewas madhya pradesh, Web Developement Freelancer" />
+				<meta name="keywords" content="JavaScript Developer, Web developers in India,Web developer in dewas madhya pradesh, Web Developement Freelancer, PrintDukan.com" />
 				<meta name="author" content="Shubham Prajapat" />
 				{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
 				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-182346080-1"></script>
@@ -54,7 +48,7 @@ export default function Layout({ children, home }) {
 				{home ? (
 					<>
 						<Image priority src="/images/profile.jpg" className={utilStyles.borderCircle} height={144} width={144} alt={name} />
-						{width <= 480 ? null : <h1 className={utilStyles.heading2Xl}>{name}</h1>}
+						<h1 className={utilStyles.headingXl}>{name}</h1>
 					</>
 				) : (
 					<>

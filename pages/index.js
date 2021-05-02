@@ -31,11 +31,7 @@ export default function Home() {
 				</a>
 				.
 			</p>
-			<a
-				className="nostyle"
-				target="_blank"
-				href={`https://wa.me/+918319505750?text=${encodeURIComponent("Hi Shubham, Came here for a quick chat for some web-related queries. \n From: YOUR_NAME")}`}
-			>
+			<a className="nostyle" target="_blank" href={`https://wa.me/+918319505750?text=${encodeURIComponent("Hi Shubham!")}`}>
 				<button type="button" className={utilStyles.chatButton} style={{ background: "rgb(37, 211, 102)", color: "white", borderColor: "rgb(37, 211, 102)" }}>
 					<span className={utilStyles.chatButtonIcon}>
 						<svg xmlns="http://www.w3.org/2000/svg" width="99.986" height="100.464" viewBox="0 0 418 420">
