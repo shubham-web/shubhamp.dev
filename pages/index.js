@@ -50,6 +50,11 @@ export default function Home() {
 					{svgs.coffeeIcon}
 				</a>
 			</div>
+			<div style={{ marginTop: "20px" }}></div>
+			<a className="twitter-timeline" href="https://twitter.com/shubhamp_web?ref_src=twsrc%5Etfw">
+				Tweets by shubhamp_web
+			</a>
+			<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 		</Layout>
 	);
 }
