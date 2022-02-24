@@ -1,60 +1,41 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import svgs from "./../components/svgs";
+import styled from "styled-components";
+import Header from "./../components/Header";
+import Hero from "./../components/Hero";
+
 export default function Home() {
 	return (
-		<Layout home>
+		<AppBorder>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>Shubham Prajapat - Full Stack Web Developer</title>
+				<meta
+					name="description"
+					content="Full Stack Web Developer Specialized in JavaScript. Having More Than 3 Years of Experience in Building Powerful and Unique Web Apps."
+				/>
+				<link rel="icon" href="/favicon.ico" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;800&amp;family=Work+Sans:wght@300;400;500;700&amp;family=Montserrat:wght@300;400;700&amp;display=swap"
+					rel="stylesheet"
+				/>
 			</Head>
-			<section>
-				<p className={utilStyles.headingMd} style={{ textAlign: "justify" }}>
-					Hi there, I'm Shubham. A professional full stack web developer for last 3 years.{/*  Constantly learning and improving web development skills since 2015. */}
-				</p>
-				<div>
-					<h2 className={utilStyles.headingMd}>Area of Expertise</h2>
-					<ul className={utilStyles.list}>
-						<li className={utilStyles.listItem}>Vanilla JavaScript ❤</li>
-						<li className={utilStyles.listItem}>
-							<a target="_blank" rel="noopener" href="https://www.mongodb.com/mern-stack">
-								MERN Stack
-							</a>
-						</li>
-						<li className={utilStyles.listItem}>NextJS</li>
-						<li className={utilStyles.listItem}>DevOps</li>
-					</ul>
-				</div>
-			</section>
-			<p>Currently, I'm not open for any full time work but feel free to reach me out for any help or just to say "Hi".</p>
-			<div className={utilStyles.footerBtnGroup}>
-				<a
-					className="nostyle"
-					target="_blank"
-					href={`https://wa.me/+918319505750?text=${encodeURIComponent("Hi Shubham!")}`}
-					className={utilStyles.footerButton}
-					style={{ background: "rgb(37, 211, 102)", color: "white", borderColor: "rgb(37, 211, 102)" }}
-				>
-					{svgs.whatsAppIcon}
-				</a>
-				<a
-					className="nostyle"
-					target="_blank"
-					href="skype:live:.cid.35702db707b292e9?chat"
-					className={utilStyles.footerButton}
-					style={{ background: "#00aff0", color: "white", borderColor: "#00aff0" }}
-				>
-					{svgs.skypeIcon}
-				</a>
-				<a className="nostyle" target="_blank" href="https://buymeacoffee.com/shubhamp" className={utilStyles.footerButton} style={{ background: "#fd0", color: "white", borderColor: "#fd0" }}>
-					{svgs.coffeeIcon}
-				</a>
-			</div>
-			<div style={{ marginTop: "20px" }}></div>
-			<a className="twitter-timeline" href="https://twitter.com/shubhamp_web?ref_src=twsrc%5Etfw">
-				Tweets by shubhamp_web
-			</a>
-			<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
-		</Layout>
+			<Header />
+			<Hero />
+		</AppBorder>
 	);
 }
+
+const AppBorder = styled.div`
+	background: #f6f6f6;
+	box-sizing: border-box;
+	overflow: hidden;
+	@media (min-width: 1600px) {
+		max-width: 1600px;
+		margin: 0 auto;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		/* border-radius: 2rem; */
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	}
+`;

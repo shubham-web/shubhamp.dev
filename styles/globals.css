@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--standard: "Montserrat", sans-serif;
+	--funky: "Baloo Bhaina 2", cursive;
+	--professional: "Work Sans", sans-serif;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+}
+
+body {
+	background: #cdd4dc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+	/* display: none; */
+}
