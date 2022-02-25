@@ -51,7 +51,7 @@ const Wrapper = styled.header`
 	display: grid;
 	grid-template-columns: 1fr 0.7fr;
 	align-items: center;
-	padding: 1rem;
+	padding: 1.5rem 2rem 0;
 	position: relative;
 	height: 100px;
 	z-index: 1;
@@ -60,6 +60,8 @@ const Wrapper = styled.header`
 		top: -120%;
 		left: 46%;
 		z-index: -1;
+		pointer-events: none;
+		user-select: none;
 	}
 `;
 const Navigation = styled.nav`

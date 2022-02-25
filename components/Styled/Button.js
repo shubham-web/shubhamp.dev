@@ -17,7 +17,7 @@ export const NavButton = styled(StyledButton)`
 	border-color: transparent;
 	text-transform: uppercase;
 	font-size: 1.25rem;
-	color: #333333;
+	color: black;
 	font-family: var(--professional);
 	transition: 0.3s;
 
