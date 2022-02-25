@@ -11,6 +11,9 @@ class Hero extends Component {
 		return (
 			<Wrapper>
 				<IntroWrapper>
+					<PurpleShape>
+						<NextImage src="/images/decoration/purple-shape.png" width={194} height={173} />
+					</PurpleShape>
 					<Intro>
 						<Greet>Hi, I Am</Greet>
 						<PersonName>Shubham Prajapat</PersonName>
@@ -90,6 +93,13 @@ const Intro = styled.div`
 	padding: 1rem;
 	padding-bottom: 10rem;
 `;
+const PurpleShape = styled.div`
+	position: absolute;
+	top: 70px;
+	left: -70px;
+	pointer-events: none;
+	z-index: -1;
+`;
 const Greet = styled.h3`
 	font-size: 2rem;
 	font-family: var(--funky);
@@ -131,8 +141,8 @@ const HireMeButton = styled(StyledButton)`
 	color: white;
 	border-radius: 50px;
 	border: none;
-	box-shadow: 0 0 10px #ffa90050;
-	padding: 1rem 2rem;
+	box-shadow: #ffa90050 0px 48px 100px 0px, #ffa90050 0px -48px 100px 0px;
+	padding: 0.8rem 3rem;
 `;
 const SkypeChatButton = styled(StyledButton)`
 	color: #0092d3;
@@ -145,6 +155,7 @@ const SkypeChatButton = styled(StyledButton)`
 	font-size: 26px;
 	padding: 0.8rem;
 	padding-right: 1.6rem;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 	& .icon {
 		display: grid;
 		justify-content: center;
@@ -163,6 +174,8 @@ const IntroWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 `;
 
 const PortraitWrapper = styled.div`

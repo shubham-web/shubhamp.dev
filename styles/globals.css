@@ -35,5 +35,9 @@ a {
 }
 
 ::-webkit-scrollbar {
-	/* display: none; */
+	display: none;
+}
+
+img {
+	user-select: none;
 }
