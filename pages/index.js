@@ -10,7 +10,7 @@ export default function Home() {
 			</Head>
 			<section>
 				<p className={utilStyles.headingMd} style={{ textAlign: "justify" }}>
-					Hey 👋, I'm Shubham. A professional web developer for last 4 years. Currently working as Full-Stack Engineer at SourceFuse Technologies.
+					Hey 👋, I'm Shubham. A professional web developer for last 4 years. Currently working as Full-Stack Engineer at SourceFuse Inc.
 				</p>
 				<div>
 					<h2 className={utilStyles.headingMd}>Area of Expertise</h2>
