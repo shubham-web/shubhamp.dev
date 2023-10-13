@@ -10,7 +10,7 @@ export default function Home() {
 			</Head>
 			<section>
 				<p className={utilStyles.headingMd} style={{ textAlign: "justify" }}>
-					Hey 👋, I'm Shubham. A professional web developer for last 4 years. Currently working as Full-Stack Engineer at SourceFuse Inc.
+					Hey 👋, I'm Shubham. A professional web developer for last 4 years. Currently working as Software Engineer at SourceFuse Technologies.
 				</p>
 				<div>
 					<h2 className={utilStyles.headingMd}>Area of Expertise</h2>
@@ -22,7 +22,7 @@ export default function Home() {
 							</a>
 						</li>
 						<li className={utilStyles.listItem}>NextJS</li>
-						<li className={utilStyles.listItem}>DevOps</li>
+						<li className={utilStyles.listItem}>AWS</li>
 					</ul>
 				</div>
 			</section>
